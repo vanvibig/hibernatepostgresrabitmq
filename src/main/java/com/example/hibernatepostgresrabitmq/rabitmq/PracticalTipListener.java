@@ -1,6 +1,6 @@
 package com.example.hibernatepostgresrabitmq.rabitmq;
 
-import com.example.hibernatepostgresrabitmq.HibernatepostgresrabitmqApplication;
+import com.example.hibernatepostgresrabitmq.config.RabbitMQConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -12,8 +12,8 @@ public class PracticalTipListener {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-    @RabbitListener(queues = HibernatepostgresrabitmqApplication.DEFAULT_PARSING_QUEUE)
+    @RabbitListener(queues = RabbitMQConfig.DEFAULT_PARSING_QUEUE)
     public void consumeDefaultMessage(final Message message) {
-        log.info("Receive message with default configuration: {}", message.toString());
+        log.info("Receive message with default configuration, tip ís: {}", message.toString());
     }
 }

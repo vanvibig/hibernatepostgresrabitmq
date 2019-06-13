@@ -1,11 +1,13 @@
 package com.example.hibernatepostgresrabitmq.rabitmq;
 
-import com.example.hibernatepostgresrabitmq.HibernatepostgresrabitmqApplication;
+import com.example.hibernatepostgresrabitmq.config.RabbitMQConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+
+import java.util.Random;
 
 @Service
 public class PracticalTipSender {
@@ -21,14 +23,14 @@ public class PracticalTipSender {
     @Scheduled(fixedDelay = 3000L)
     public void sendPracticalTip() {
         PracticalTipMessage tip = new PracticalTipMessage(
-                "Always use Immutable classes in java",
-                1,
+                "Hello there!",
+                new Random().nextInt(50),
                 false
         );
 
         rabbitTemplate.convertAndSend(
-                HibernatepostgresrabitmqApplication.EXCHANGE_NAME,
-                HibernatepostgresrabitmqApplication.ROUTING_KEY,
+                RabbitMQConfig.EXCHANGE_NAME,
+                RabbitMQConfig.ROUTING_KEY,
                 tip
         );
 
