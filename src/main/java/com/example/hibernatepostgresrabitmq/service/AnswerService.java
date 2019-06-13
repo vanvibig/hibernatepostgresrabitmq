@@ -1,9 +1,9 @@
 package com.example.hibernatepostgresrabitmq.service;
 
-import com.example.hibernatepostgres.exception.ResourceNotFoundException;
-import com.example.hibernatepostgres.model.Answer;
-import com.example.hibernatepostgres.repository.AnswerRepository;
-import com.example.hibernatepostgres.repository.QuestionRepository;
+import com.example.hibernatepostgresrabitmq.exception.ResourceNotFoundException;
+import com.example.hibernatepostgresrabitmq.model.Answer;
+import com.example.hibernatepostgresrabitmq.repository.AnswerRepository;
+import com.example.hibernatepostgresrabitmq.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

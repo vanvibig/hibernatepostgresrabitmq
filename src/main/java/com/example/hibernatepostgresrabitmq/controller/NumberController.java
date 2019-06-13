@@ -1,6 +1,6 @@
 package com.example.hibernatepostgresrabitmq.controller;
 
-import com.example.hibernatepostgres.service.NumberService;
+import com.example.hibernatepostgresrabitmq.service.NumberService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

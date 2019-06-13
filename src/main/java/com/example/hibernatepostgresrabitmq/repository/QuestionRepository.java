@@ -1,6 +1,6 @@
 package com.example.hibernatepostgresrabitmq.repository;
 
-import com.example.hibernatepostgres.model.Question;
+import com.example.hibernatepostgresrabitmq.model.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

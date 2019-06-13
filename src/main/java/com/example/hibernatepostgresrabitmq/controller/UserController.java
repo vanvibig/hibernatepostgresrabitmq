@@ -1,7 +1,7 @@
 package com.example.hibernatepostgresrabitmq.controller;
 
-import com.example.hibernatepostgres.model.User;
-import com.example.hibernatepostgres.service.UserService;
+import com.example.hibernatepostgresrabitmq.model.User;
+import com.example.hibernatepostgresrabitmq.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

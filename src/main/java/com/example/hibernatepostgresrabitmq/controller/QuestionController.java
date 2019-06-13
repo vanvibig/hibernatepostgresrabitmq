@@ -1,7 +1,7 @@
 package com.example.hibernatepostgresrabitmq.controller;
 
-import com.example.hibernatepostgres.model.Question;
-import com.example.hibernatepostgres.service.QuestionService;
+import com.example.hibernatepostgresrabitmq.model.Question;
+import com.example.hibernatepostgresrabitmq.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

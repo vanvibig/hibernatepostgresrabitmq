@@ -1,7 +1,7 @@
 package com.example.hibernatepostgresrabitmq.repository.impl;
 
-import com.example.hibernatepostgres.model.User;
-import com.example.hibernatepostgres.repository.UserRepositoryCustom;
+import com.example.hibernatepostgresrabitmq.model.User;
+import com.example.hibernatepostgresrabitmq.repository.UserRepositoryCustom;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

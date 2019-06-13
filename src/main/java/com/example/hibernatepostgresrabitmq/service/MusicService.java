@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @CacheConfig(cacheNames = "instruments")
 public class MusicService {
 
-    private static Logger log = LoggerFactory.getLogger(MusicService.class);
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @CacheEvict(allEntries = true)
     public void clearCache(){}

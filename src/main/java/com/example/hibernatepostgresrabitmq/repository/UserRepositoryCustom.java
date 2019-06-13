@@ -1,6 +1,6 @@
 package com.example.hibernatepostgresrabitmq.repository;
 
-import com.example.hibernatepostgres.model.User;
+import com.example.hibernatepostgresrabitmq.model.User;
 
 import java.util.List;
 

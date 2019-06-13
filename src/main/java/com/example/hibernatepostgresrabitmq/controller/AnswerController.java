@@ -1,7 +1,7 @@
 package com.example.hibernatepostgresrabitmq.controller;
 
-import com.example.hibernatepostgres.model.Answer;
-import com.example.hibernatepostgres.service.AnswerService;
+import com.example.hibernatepostgresrabitmq.model.Answer;
+import com.example.hibernatepostgresrabitmq.service.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;

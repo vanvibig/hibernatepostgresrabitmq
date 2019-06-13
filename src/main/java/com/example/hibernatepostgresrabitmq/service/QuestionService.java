@@ -1,8 +1,8 @@
 package com.example.hibernatepostgresrabitmq.service;
 
-import com.example.hibernatepostgres.exception.ResourceNotFoundException;
-import com.example.hibernatepostgres.model.Question;
-import com.example.hibernatepostgres.repository.QuestionRepository;
+import com.example.hibernatepostgresrabitmq.exception.ResourceNotFoundException;
+import com.example.hibernatepostgresrabitmq.model.Question;
+import com.example.hibernatepostgresrabitmq.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

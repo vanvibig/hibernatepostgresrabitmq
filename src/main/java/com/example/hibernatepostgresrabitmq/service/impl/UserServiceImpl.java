@@ -1,8 +1,8 @@
 package com.example.hibernatepostgresrabitmq.service.impl;
 
-import com.example.hibernatepostgres.model.User;
-import com.example.hibernatepostgres.repository.UserRepository;
-import com.example.hibernatepostgres.service.UserService;
+import com.example.hibernatepostgresrabitmq.model.User;
+import com.example.hibernatepostgresrabitmq.repository.UserRepository;
+import com.example.hibernatepostgresrabitmq.service.UserService;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
